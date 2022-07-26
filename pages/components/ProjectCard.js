@@ -8,7 +8,16 @@ import Typography from '@mui/material/Typography'
 import Paper from '@mui/material/Paper'
 import GitHubIcon from '@mui/icons-material/GitHub'
 
-const ImgMediaCard = ({ content }) => {
+const ImgMediaCard = ({
+  content = {
+    title: '',
+    description: '',
+    tags: '',
+    video: '',
+    link: '',
+    git: '',
+  },
+}) => {
   return (
     <Paper elevation={5}>
       <Card sx={{ maxWidth: 345 }}>
