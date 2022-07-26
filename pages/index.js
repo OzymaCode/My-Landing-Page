@@ -25,7 +25,7 @@ const Home = () => {
   return (
     <div className="centerContent fillContainer background">
       <Typography variant="h4" style={{ color: '	#232b2b' }}>
-        Hi! I'm Toby and I'm a Web Developer
+        Hi! I&apos;m Toby and I&apos;m a Software Developer
       </Typography>
       <Typography variant="body2"></Typography>
     </div>
