@@ -33,13 +33,13 @@ const Work = () => {
       git: 'https://github.com/stars/OzymaCode/lists/ethex',
     },
     shop: {
-      title: 'Ethereum Exchange | React, Solidity',
+      title: 'Alaskan Fishery | Next Js, Redux',
       description:
-        'An app that lets users send each other ethereum. The program uses an api to connect to a solidity contract I deployed to the Ethereum Block-Chain. It then sends the ether through the contract to the address that the user entered. *Metamask required.',
+        'This is an e-commerce website for selling fish I made. It uses Next Js, Redux, Framer-Motion, Tailwindcss, Mui and is connected to PayPal for payments. The front-end hosted on Netlify, and the back-end on Heroku. ',
       tags: '',
-      video: 'https://youtu.be/tyHF-DGLIvw',
-      link: 'https://ozyma-ethereum-exchange.netlify.app',
-      git: 'https://github.com/stars/OzymaCode/lists/ethex',
+      video: 'https://youtu.be/EDcYA48qwug',
+      link: 'https://alaskan-fishery.netlify.app/',
+      git: 'https://github.com/stars/OzymaCode/lists/alaskan-fishery',
     },
   }
   return (
@@ -52,6 +52,9 @@ const Work = () => {
           alignItems="center"
           justifyContent={'center'}
         >
+          <Grid item xs={12} sm={6} style={styles.card}>
+            <Card content={content.shop} />
+          </Grid>
           <Grid item xs={12} sm={6} style={styles.card}>
             <Card content={content.chat} />
           </Grid>
