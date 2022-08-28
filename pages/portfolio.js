@@ -32,6 +32,15 @@ const Work = () => {
       link: 'https://ozyma-ethereum-exchange.netlify.app',
       git: 'https://github.com/stars/OzymaCode/lists/ethex',
     },
+    shop: {
+      title: 'Ethereum Exchange | React, Solidity',
+      description:
+        'An app that lets users send each other ethereum. The program uses an api to connect to a solidity contract I deployed to the Ethereum Block-Chain. It then sends the ether through the contract to the address that the user entered. *Metamask required.',
+      tags: '',
+      video: 'https://youtu.be/tyHF-DGLIvw',
+      link: 'https://ozyma-ethereum-exchange.netlify.app',
+      git: 'https://github.com/stars/OzymaCode/lists/ethex',
+    },
   }
   return (
     <div className="centerContent fillContainer background">
