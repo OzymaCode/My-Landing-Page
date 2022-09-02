@@ -18,9 +18,9 @@ import GitHubIcon from '@mui/icons-material/GitHub'
 import Grid from '@mui/material/Grid'
 
 const drawerWidth = 240
-const navItems = ['Home', 'Resume', 'Portfolio', 'Contact']
+const navItems = ['Home', 'Skills', 'Portfolio', 'Contact']
 const navPaths = {
-  Resume: '/resume',
+  Skills: '/skills',
   Portfolio: '/portfolio',
   Contact: '/contact',
   Home: '/',
@@ -130,15 +130,36 @@ function DrawerAppBar(props) {
             <Grid
               item
               sm={2}
-              style={{ display: 'flex', justifyContent: 'flex-end' }}
+              style={{
+                display: 'flex',
+                justifyContent: 'flex-end',
+              }}
             >
+              {router.pathname != '/resume' ? (
+                <Button
+                  sx={{ color: '#fff', padding: '0 20px' }}
+                  onClick={() => router.push('/resume')}
+                  disableRipple
+                >
+                  Resume
+                </Button>
+              ) : (
+                <Button
+                  sx={{ color: '#232b2b', padding: '0 20px' }}
+                  onClick={() => router.push('/resume')}
+                  disableRipple
+                >
+                  Resume
+                </Button>
+              )}
               <a
                 target="_blank"
                 href="https://github.com/OzymaCode"
                 rel="noopener noreferrer"
                 style={{
                   color: 'rgba(0, 0, 0, .6)', //'#353935',
-                  marginTop: '.5em',
+                  marginTop: '.25em',
+                  padding: '0 20px',
                 }}
               >
                 <GitHubIcon />
@@ -169,10 +190,6 @@ function DrawerAppBar(props) {
       </Box>
     </Box>
   )
-}
-
-{
-  /* <Toolbar /> */
 }
 
 DrawerAppBar.propTypes = {
